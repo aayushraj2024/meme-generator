@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.header {
+  background: linear-gradient(90deg, #741f91 0%, #682282 50%, #9e25c8 100%);
+  color: white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+}
+
+.header__logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+}
+
+.header__title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.form {
+}
+
+.form__header {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.form__group {
+  flex: 1;
+}
+
+.form__label {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #741f91;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-block: 4px;
+  min-height: 40px;
+  color: #181717;
+}
+
+.form__input:focus {
+  outline: none;
+  border: 2px solid #741f91;
+}
+
+.button {
+  width: 100%;
+  margin-block: 20px;
+  padding: 8px 16px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  min-height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.meme {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme__image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.meme__text {
+  position: absolute;
+  text-align: center;
+  margin-block: 15px;
+  padding-inline: 5px;
+  font-family: impact, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.meme__text--top {
+  top: 0px;
+}
+
+.meme__text--bottom {
+  bottom: 0px;
+}
